@@ -1,44 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicon-32x32.png"
+      />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <title>Frontend Mentor | E-commerce product page</title>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
 
-  Sneaker Company
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous"
+      />
 
-  Fall Limited Edition Sneakers
+      <link rel="stylesheet" href="./src/css/index.css" />
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+         .attribution {
+            font-size: 11px;
+            text-align: center;
+         }
+         .attribution a {
+            color: hsl(228, 45%, 44%);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-ct">
+         <!-- Header start -->
+         <header class="header">
+            <div class="header__logo">
+               <img
+                  src="./images/logo.svg"
+                  alt="sneakers"
+                  class="header__img"
+               />
+            </div>
+            <ul class="nav">
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Collections</a>
+               </li>
+               <li class="nav__item nav__item--active">
+                  <a href="#" class="nav__link">Men</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Women</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#" class="nav__link">About</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Contact</a>
+               </li>
+            </ul>
+            <div class="cart">
+               <svg
+                  class="cart__icon"
+                  width="22"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+               >
+                  <path
+                     d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                     fill-rule="nonzero"
+                  />
+               </svg>
+               <div class="cart__container empty">
+                  <header class="cart__header">
+                     <h3 class="cart__heading">Cart</h3>
+                  </header>
+               </div>
+            </div>
+            <div class="user">
+               <img
+                  src="./images/image-avatar.png"
+                  alt="avt"
+                  class="user__avatar"
+               />
+            </div>
+         </header>
+         <!-- Header ends -->
 
-  $125.00
-  50%
-  $250.00
+         <!-- Body start -->
+         <div class="body-container">
+            <div class="product">
+               <div class="product__imgs">
+                  <img
+                     src="./images/image-product-1.jpg"
+                     alt=""
+                     class="product__img"
+                  />
+                  <div class="product__thumbnails">
+                     <div
+                        class="
+                           product__thumbnail-container
+                           product__thumbnail-container--active
+                        "
+                     >
+                        <img
+                           src="./images/image-product-1-thumbnail.jpg"
+                           alt="product__thumbnail"
+                           class="product__thumbnail"
+                        />
+                     </div>
+                     <div class="product__thumbnail-container">
+                        <img
+                           src="./images/image-product-2-thumbnail.jpg"
+                           alt="product__thumbnail"
+                           class="product__thumbnail"
+                        />
+                     </div>
+                     <div class="product__thumbnail-container">
+                        <img
+                           src="./images/image-product-3-thumbnail.jpg"
+                           alt="product__thumbnail"
+                           class="product__thumbnail"
+                        />
+                     </div>
+                     <div class="product__thumbnail-container">
+                        <img
+                           src="./images/image-product-4-thumbnail.jpg"
+                           alt="product__thumbnail"
+                           class="product__thumbnail"
+                        />
+                     </div>
+                  </div>
+               </div>
+               <div class="info product__info">
+                  <span class="info__tag">Sneaker Company</span>
+                  <h2 class="info__name">Fall Limited Edition Sneakers</h2>
+                  <p class="info__desc">
+                     These low-profile sneakers are your perfect casual wear
+                     companion. Featuring a durable rubber outer sole, they’ll
+                     withstand everything the weather can offer.
+                  </p>
+                  <div class="info__price">
+                     <span class="sale-price"
+                        >$125.00
+                        <span class="discount-tag">50%</span>
+                     </span>
+                     <span class="listed-price">$250.00</span>
+                  </div>
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+                  <div class="product__control">
+                     <div class="product__input">
+                        <button class="product__input-control">-</button>
+                        <input type="number" value="0" />
+                        <button class="product__input-control">+</button>
+                     </div>
+                     <button class="product__add-btn">
+                        <svg
+                           width="22"
+                           height="20"
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="product__add-btn-icon"
+                        >
+                           <path
+                              d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                              fill-rule="nonzero"
+                           />
+                        </svg>
+                        Add to cart
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Body ends -->
+      </div>
+
+      <div class="attribution">
+         Challenge by
+         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+         >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+   </body>
 </html>
